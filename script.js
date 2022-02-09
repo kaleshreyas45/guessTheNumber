@@ -47,7 +47,7 @@ document.querySelector('.check').addEventListener('click',function(){
         guessing.textContent = 'You Lost!';
         document.querySelector('body').style.backgroundColor = 'red';
         document.querySelector('.check').addEventListener('click',function(){
-            alert("You have already guessed the number!");
+            alert("Game Over!");
         })
     }
 
