@@ -23,6 +23,9 @@ document.querySelector('.check').addEventListener('click',function(){
             }
             document.querySelector('.box').textContent = secretNumber;
             document.querySelector('body').style.backgroundColor = 'green';
+            document.querySelector('.check').addEventListener('click',function(){
+                alert("You have already guessed the number!");
+            })
             
            
            
@@ -43,6 +46,9 @@ document.querySelector('.check').addEventListener('click',function(){
         document.querySelector('.score').textContent = score;
         guessing.textContent = 'You Lost!';
         document.querySelector('body').style.backgroundColor = 'red';
+        document.querySelector('.check').addEventListener('click',function(){
+            alert("You have already guessed the number!");
+        })
     }
 
 })
